@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="เว็บไซต์รวบรวมข้อมูลวันสำคัญทางพระพุทธศาสนา - วันมาฆบูชา วันวิสาขบูชา วันอาสาฬหบูชา วันเข้าพรรษา พร้อมเนื้อหาความรู้และวิดีโอที่เกี่ยวข้อง">
+    <meta name="keywords"
+        content="วันสำคัญทางพระพุทธศาสนา, มาฆบูชา, วิสาขบูชา, อาสาฬหบูชา, เข้าพรรษา, Buddhism, Thai Buddhist Days">
+    <meta name="author" content="นักศึกษา">
+    <title>วันสำคัญทางพระพุทธศาสนา | Buddhist Holy Days</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☸️</text></svg>">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-lotus">🪷</div>
+        <div class="loading-text">กำลังโหลด...</div>
+    </div>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="ambient-orb"></div>
+        <div class="ambient-orb"></div>
+        <div class="ambient-orb"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <span class="nav-brand-icon">☸️</span>
+                <span>วันสำคัญทางศาสนา</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">🏠 หน้าแรก</a></li>
+                <li><a href="makha-bucha.html">🕯️ มาฆบูชา</a></li>
+                <li><a href="visakha-bucha.html">🪷 วิสาขบูชา</a></li>
+                <li><a href="asalha-bucha.html">☸️ อาสาฬหบูชา</a></li>
+                <li><a href="khao-phansa.html">🙏 เข้าพรรษา</a></li>
+                <li><a href="ok-phansa.html">🌕 ออกพรรษา</a></li>
+                <li><a href="about.html">📘 ทฤษฎีออกแบบ & HCI</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-pattern"></div>
+            <div class="hero-bg-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-icon">🪷</div>
+            <div class="hero-badge">✦ พระพุทธศาสนา & ศิลปวัฒนธรรมไทย ✦</div>
+            <h1 class="hero-title">วันสำคัญทาง<br>พระพุทธศาสนา</h1>
+            <p class="hero-subtitle">
+                รวบรวมข้อมูลวันสำคัญทางพระพุทธศาสนา 5 วันหลัก
+                ที่พุทธศาสนิกชนชาวไทยยึดถือปฏิบัติ พร้อมสื่อวิดีโอจากแพลตฟอร์มออนไลน์
+                แบบทดสอบความรู้เชิงปฏิสัมพันธ์ และเอกสารทฤษฎีการออกแบบเว็บไซต์ & HCI
+            </p>
+            <div class="hero-cta">
+                <a href="#buddhist-days" class="btn btn-primary">🔍 สำรวจวันสำคัญ</a>
+                <a href="#videos" class="btn btn-outline">▶ ชมสื่อวิดีโอ</a>
+                <a href="#quiz-section" class="btn btn-primary"
+                    style="background:linear-gradient(135deg,#e88d30,#f0c75e);color:#0a0a14;">📝 ทำแบบทดสอบ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section reveal">
+        <div class="quote-icon">❝</div>
+        <blockquote class="quote-text">
+            "ความชั่วทั้งหลาย ไม่ทำเสียเลย ความดีทั้งหลาย ให้ถึงพร้อม<br>
+            ทำจิตของตนให้ผ่องแผ้ว นี้คือคำสอนของพระพุทธเจ้าทั้งหลาย"
+        </blockquote>
+        <p class="quote-author">— พระโอวาทปาฏิโมกข์ —</p>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section" id="stats">
+        <div class="section-container">
+            <div class="stats-grid reveal">
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">วันสำคัญหลัก</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2,500+</div>
+                    <div class="stat-label">ปีแห่งพระพุทธศาสนา</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">84,000</div>
+                    <div class="stat-label">พระธรรมขันธ์</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">ล้านพุทธศาสนิกชน</div>
+                </div>
+            </div>
+
+            <!-- Countdown to next Buddhist Holy Day -->
+            <div class="countdown-container reveal">
+                <div class="countdown-title">⏳ ตัวนับเวลาถอยหลังปฏิสัมพันธ์ (HCI Interactive Countdown)</div>
+                <div class="countdown-target-name">นับถอยหลังสู่วันสำคัญทางพระพุทธศาสนาถัดไป</div>
+                <div class="countdown-grid">
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="countDays">00</span>
+                        <span class="countdown-unit">วัน</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="countHours">00</span>
+                        <span class="countdown-unit">ชั่วโมง</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="countMins">00</span>
+                        <span class="countdown-unit">นาที</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="countSecs">00</span>
+                        <span class="countdown-unit">วินาที</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section (Multi-Platform: YouTube, TikTok, Facebook) -->
+    <section class="section video-section" id="videos">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-badge">📺 มัลติมีเดียและสื่อออนไลน์</div>
+                <h2 class="section-title">วิดีโอวันสำคัญทางพระพุทธศาสนา</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    รวบรวมคลิปวิดีโอสาระความรู้ ประเพณี และประวัติความเป็นมาจาก YouTube, TikTok และ Facebook
+                </p>
+            </div>
+
+            <!-- Video Platform Filter Tabs -->
+            <div class="video-filter-bar reveal">
+                <button class="video-tab active" data-filter="all">🌟 สื่อทั้งหมด</button>
+                <button class="video-tab" data-filter="youtube">📺 YouTube สารคดี</button>
+                <button class="video-tab" data-filter="tiktok">🎵 TikTok คลิปสั้นธรรมะ</button>
+                <button class="video-tab" data-filter="facebook">📱 Facebook ถ่ายทอดสด & สื่อวัฒนธรรม</button>
+            </div>
+
+            <!-- ส่วนวิดีโอของจริงที่อัปเดตใหม่ทั้งหมด -->
+            <div class="videos-grid">
+                <!-- Video 1: YouTube -->
+                <div class="video-card video-card-item reveal stagger-1" data-platform="youtube">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/M8-xVuGWIbM" title="เรื่อง วันสำคัญทางพระพุทธศาสนา"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <span class="platform-pill pill-youtube"
+                            style="position:static;display:inline-block;margin-bottom:8px;">YouTube</span>
+                        <h3 class="video-title">ความรู้: วันสำคัญทางพระพุทธศาสนา</h3>
+                        <p class="video-source">📺 สื่อการเรียนการสอน</p>
+                    </div>
+                </div>
+
+                <!-- Video 2: YouTube -->
+                <div class="video-card video-card-item reveal stagger-2" data-platform="youtube">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/3vjZsZNe1zk" title="วันมาฆบูชา ความสำคัญ"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <span class="platform-pill pill-youtube"
+                            style="position:static;display:inline-block;margin-bottom:8px;">YouTube</span>
+                        <h3 class="video-title">วันมาฆบูชา - ความสำคัญและประวัติ</h3>
+                        <p class="video-source">📺 สื่อสาระทางพระพุทธศาสนา</p>
+                    </div>
+                </div>
+
+                <!-- Video 3: YouTube -->
+                <div class="video-card video-card-item reveal stagger-3" data-platform="youtube">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/sJXytI9d2ZQ" title="วันวิสาขบูชา พุทธประวัติ"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <span class="platform-pill pill-youtube"
+                            style="position:static;display:inline-block;margin-bottom:8px;">YouTube</span>
+                        <h3 class="video-title">วันวิสาขบูชา - พุทธประวัติ ประสูติ ตรัสรู้ ปรินิพพาน</h3>
+                        <p class="video-source">📺 พุทธานุภาพ</p>
+                    </div>
+                </div>
+
+                <!-- Video 4: TikTok ของหน่วยงานรัฐบาล -->
+                <a href="https://www.tiktok.com/@onab_official" target="_blank" rel="noopener noreferrer"
+                    class="social-video-card video-card-item reveal stagger-1" data-platform="tiktok">
+                    <div class="social-video-thumb">
+                        <img src="https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/f8b9fb4a468d341b3b142a069d7e1de2~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=786cdd9a&x-expires=1790848800&x-signature=RDISID8Rw%2Be7ck0fxfjW43C4%2Bl0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2"
+                            alt="TikTok สำนักงานพระพุทธศาสนาแห่งชาติ">
+                        <span class="platform-pill pill-tiktok">🎵 TikTok ทางการ</span>
+                        <div class="social-play-btn">▶</div>
+                    </div>
+                    <div class="video-info" style="padding:16px;">
+                        <h3 class="video-title">สื่อความรู้ทางศาสนาจากภาครัฐ</h3>
+                        <p class="video-source">🎵 @onab_official (สำนักงานพระพุทธศาสนาฯ)</p>
+                    </div>
+                </a>
+
+                <!-- Video 5: TikTok แฮชแท็กธรรมะเตือนใจ -->
+                <a href="https://www.tiktok.com/tag/ธรรมะเตือนใจ" target="_blank" rel="noopener noreferrer"
+                    class="social-video-card video-card-item reveal stagger-2" data-platform="tiktok">
+                    <div class="social-video-thumb">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=350&fit=crop&q=80"
+                            alt="TikTok ธรรมะเตือนใจ">
+                        <span class="platform-pill pill-tiktok">🎵 TikTok คลิปสั้น</span>
+                        <div class="social-play-btn">▶</div>
+                    </div>
+                    <div class="video-info" style="padding:16px;">
+                        <h3 class="video-title">คลิปสั้นธรรมะเตือนใจและการใช้ชีวิต</h3>
+                        <p class="video-source">🎵 รวมคลิปแฮชแท็ก #ธรรมะเตือนใจ</p>
+                    </div>
+                </a>
+
+                <!-- Video 6: Facebook กรมการศาสนา -->
+                <a href="https://www.facebook.com/Drathai.go.th/" target="_blank" rel="noopener noreferrer"
+                    class="social-video-card video-card-item reveal stagger-3" data-platform="facebook">
+                    <div class="social-video-thumb">
+                        <img src="https://scontent.fbkk4-2.fna.fbcdn.net/v/t39.30808-1/571136540_1419435463523913_2472076045221286425_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s200x200&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeEfmJadba8EJaqQomk9NzGdkQozIxZDnJ-RCjMjFkOcnz-ugqB1H2-3JXWi1xg1BDiTvGx50K5Nz2Hn9xqbqHem&_nc_ohc=8bKkjsOjCxMQ7kNvwH147yD&_nc_oc=AdoFVzC1Cwj5Q_a8umDdfKt1WWol9P1K-TqfqGEYLDHr50UDjbwTm1ki0PFPXVNM7hY&_nc_zt=24&_nc_ht=scontent.fbkk4-2.fna&_nc_gid=6z4MysIRviYleHZl1CK52g&_nc_ss=7b2a8&oh=00_AQOcip_N-z8XaQGVJtYgfy4ImS7Ox6b1fpLYvSZGOjVHlQ&oe=6AC17815"
+                            alt="Facebook Live กรมการศาสนา">
+                        <span class="platform-pill pill-facebook">📱 Facebook Official</span>
+                        <div class="social-play-btn">▶</div>
+                    </div>
+                    <div class="video-info" style="padding:16px;">
+                        <h3 class="video-title">ข่าวสารและกิจกรรมศิลปวัฒนธรรมไทย</h3>
+                        <p class="video-source">📱 กรมการศาสนา</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buddhist Important Days Section -->
+    <section class="section" id="buddhist-days">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-badge">☸️ วันสำคัญ</div>
+                <h2 class="section-title">วันสำคัญทางพระพุทธศาสนา 5 วันหลัก</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    วันสำคัญทางพระพุทธศาสนาที่พุทธศาสนิกชนชาวไทย
+                    ร่วมกันประกอบพิธีกรรม ปฏิบัติธรรม และสืบสานประเพณีอันดีงาม
+                </p>
+            </div>
+            <div class="cards-grid">
+                <!-- มาฆบูชา -->
+                <a href="makha-bucha.html" class="day-card reveal stagger-1" style="text-decoration:none;">
+                    <div class="day-card-image">
+                        <img src="https://images.unsplash.com/photo-1600077106724-76d94a004a91?w=600&h=400&fit=crop&q=80"
+                            alt="วันมาฆบูชา - เวียนเทียน" loading="lazy">
+                        <span class="day-card-emoji">🕯️</span>
+                    </div>
+                    <div class="day-card-content">
+                        <div class="day-card-date">📅 ขึ้น 15 ค่ำ เดือน 3</div>
+                        <h3 class="day-card-title">วันมาฆบูชา</h3>
+                        <p class="day-card-desc">
+                            วันที่พระสงฆ์ 1,250 รูป มาประชุมพร้อมกันโดยมิได้นัดหมาย
+                            และพระพุทธเจ้าทรงแสดงโอวาทปาฏิโมกข์
+                        </p>
+                        <span class="day-card-link">อ่านเพิ่มเติม <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+                <!-- วิสาขบูชา -->
+                <a href="visakha-bucha.html" class="day-card reveal stagger-2" style="text-decoration:none;">
+                    <div class="day-card-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop&q=80"
+                            alt="วันวิสาขบูชา - ดอกบัว" loading="lazy">
+                        <span class="day-card-emoji">🪷</span>
+                    </div>
+                    <div class="day-card-content">
+                        <div class="day-card-date">📅 ขึ้น 15 ค่ำ เดือน 6</div>
+                        <h3 class="day-card-title">วันวิสาขบูชา</h3>
+                        <p class="day-card-desc">
+                            วันสำคัญสากลของโลก เป็นวันที่พระพุทธเจ้าประสูติ ตรัสรู้
+                            และเสด็จดับขันธปรินิพพาน ตรงกันในวันเดียว
+                        </p>
+                        <span class="day-card-link">อ่านเพิ่มเติม <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+                <!-- อาสาฬหบูชา -->
+                <a href="asalha-bucha.html" class="day-card reveal stagger-3" style="text-decoration:none;">
+                    <div class="day-card-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&q=80"
+                            alt="วันอาสาฬหบูชา - พระธรรมจักร" loading="lazy">
+                        <span class="day-card-emoji">☸️</span>
+                    </div>
+                    <div class="day-card-content">
+                        <div class="day-card-date">📅 ขึ้น 15 ค่ำ เดือน 8</div>
+                        <h3 class="day-card-title">วันอาสาฬหบูชา</h3>
+                        <p class="day-card-desc">
+                            วันที่พระพุทธเจ้าทรงแสดงปฐมเทศนา "ธัมมจักกัปปวัตตนสูตร"
+                            แก่ปัญจวัคคีย์ เป็นวันที่พระรัตนตรัยครบองค์สาม
+                        </p>
+                        <span class="day-card-link">อ่านเพิ่มเติม <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+                <!-- เข้าพรรษา -->
+                <a href="khao-phansa.html" class="day-card reveal stagger-4" style="text-decoration:none;">
+                    <div class="day-card-image">
+                        <img src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=600&h=400&fit=crop&q=80"
+                            alt="วันเข้าพรรษา - ถวายเทียน" loading="lazy">
+                        <span class="day-card-emoji">🙏</span>
+                    </div>
+                    <div class="day-card-content">
+                        <div class="day-card-date">📅 แรม 1 ค่ำ เดือน 8</div>
+                        <h3 class="day-card-title">วันเข้าพรรษา</h3>
+                        <p class="day-card-desc">
+                            วันเริ่มต้นฤดูจำพรรษาของพระสงฆ์ตลอด 3 เดือน
+                            ในช่วงฤดูฝน มีประเพณีถวายเทียนพรรษาและผ้าอาบน้ำฝน
+                        </p>
+                        <span class="day-card-link">อ่านเพิ่มเติม <span class="arrow">→</span></span>
+                    </div>
+                </a>
+
+                <!-- ออกพรรษา -->
+                <a href="ok-phansa.html" class="day-card reveal stagger-1" style="text-decoration:none;">
+                    <div class="day-card-image">
+                        <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?w=600&h=400&fit=crop&q=80"
+                            alt="วันออกพรรษา - ตักบาตรเทโว" loading="lazy">
+                        <span class="day-card-emoji">🌕</span>
+                    </div>
+                    <div class="day-card-content">
+                        <div class="day-card-date">📅 ขึ้น 15 ค่ำ เดือน 11</div>
+                        <h3 class="day-card-title">วันออกพรรษา</h3>
+                        <p class="day-card-desc">
+                            วันมหาปวารณาสิ้นสุดการจำพรรษา 3 เดือน และประเพณีตักบาตรเทโวโรหณะ
+                            การทอดกฐินและเทศน์มหาชาติ
+                        </p>
+                        <span class="day-card-link">อ่านเพิ่มเติม <span class="arrow">→</span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="section" id="activities">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-badge">🙏 กิจกรรม</div>
+                <h2 class="section-title">กิจกรรมที่พุทธศาสนิกชนพึงปฏิบัติ</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    กิจกรรมที่ชาวพุทธนิยมปฏิบัติในวันสำคัญทางพระพุทธศาสนา
+                </p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card reveal stagger-1">
+                    <div class="activity-icon">🕯️</div>
+                    <h3 class="activity-title">เวียนเทียน</h3>
+                    <p class="activity-desc">
+                        เดินเวียนรอบอุโบสถ 3 รอบ ถือดอกไม้ ธูป เทียน
+                        ระลึกถึงพระพุทธ พระธรรม พระสงฆ์
+                    </p>
+                </div>
+                <div class="activity-card reveal stagger-2">
+                    <div class="activity-icon">🎋</div>
+                    <h3 class="activity-title">ทำบุญตักบาตร</h3>
+                    <p class="activity-desc">
+                        ตักบาตรถวายอาหารแด่พระสงฆ์ ถวายสังฆทาน
+                        เพื่อสร้างบุญกุศลและสืบทอดพระศาสนา
+                    </p>
+                </div>
+                <div class="activity-card reveal stagger-3">
+                    <div class="activity-icon">📿</div>
+                    <h3 class="activity-title">รักษาศีล</h3>
+                    <p class="activity-desc">
+                        รักษาศีล 5 หรือศีล 8 ประพฤติปฏิบัติตนในทางที่ดี
+                        ละเว้นจากอบายมุขต่างๆ
+                    </p>
+                </div>
+                <div class="activity-card reveal stagger-4">
+                    <div class="activity-icon">🧘</div>
+                    <h3 class="activity-title">ปฏิบัติธรรม</h3>
+                    <p class="activity-desc">
+                        นั่งสมาธิ เจริญภาวนา ฟังเทศน์ฟังธรรม
+                        น้อมนำหลักธรรมมาปรับใช้ในชีวิตประจำวัน
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dhamma Quiz Section (HCI Interactive Gamification) -->
+    <section class="section quiz-section" id="quiz-section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-badge">📝 แบบทดสอบความรู้</div>
+                <h2 class="section-title">ทดสอบความรู้วันสำคัญทางพระพุทธศาสนา</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    ระบบทดสอบความรู้เชิงปฏิสัมพันธ์ (HCI Interaction & Instant Feedback)
+                    ทดสอบความเข้าใจเกี่ยวกับประวัติและหลักธรรมทางพระพุทธศาสนา
+                </p>
+            </div>
+            <div id="dhammaQuiz"></div>
+        </div>
+    </section>
+
+    <!-- External Links Section -->
+    <section class="section external-links" id="external-links">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-badge">🔗 ลิงก์ที่เกี่ยวข้อง</div>
+                <h2 class="section-title">เว็บไซต์เกี่ยวกับพระพุทธศาสนา</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    รวมลิงก์เว็บไซต์ที่เกี่ยวข้องกับพระพุทธศาสนาที่น่าสนใจ
+                </p>
+            </div>
+            <div class="links-grid">
+                <a href="https://www.onab.go.th/" target="_blank" rel="noopener noreferrer"
+                    class="link-card reveal stagger-1">
+                    <span class="link-card-icon">🏛️</span>
+                    <div class="link-card-info">
+                        <div class="link-card-title">สำนักงานพระพุทธศาสนาแห่งชาติ</div>
+                        <div class="link-card-desc">onab.go.th</div>
+                    </div>
+                    <span class="link-card-arrow">→</span>
+                </a>
+                <a href="https://www.dra.go.th/" target="_blank" rel="noopener noreferrer"
+                    class="link-card reveal stagger-2">
+                    <span class="link-card-icon">🏛️</span>
+                    <div class="link-card-info">
+                        <div class="link-card-title">กรมการศาสนา กระทรวงวัฒนธรรม</div>
+                        <div class="link-card-desc">dra.go.th</div>
+                    </div>
+                    <span class="link-card-arrow">→</span>
+                </a>
+                <a href="https://www.dhammathai.org/" target="_blank" rel="noopener noreferrer"
+                    class="link-card reveal stagger-3">
+                    <span class="link-card-icon">📚</span>
+                    <div class="link-card-info">
+                        <div class="link-card-title">ธรรมะไทย</div>
+                        <div class="link-card-desc">dhammathai.org</div>
+                    </div>
+                    <span class="link-card-arrow">→</span>
+                </a>
+                <a href="https://84000.org/" target="_blank" rel="noopener noreferrer"
+                    class="link-card reveal stagger-4">
+                    <span class="link-card-icon">📖</span>
+                    <div class="link-card-info">
+                        <div class="link-card-title">พระไตรปิฎกออนไลน์</div>
+                        <div class="link-card-desc">84000.org</div>
+                    </div>
+                    <span class="link-card-arrow">→</span>
+                </a>
+                <a href="https://www.dhammajak.net/" target="_blank" rel="noopener noreferrer"
+                    class="link-card reveal stagger-1">
+                    <span class="link-card-icon">🪷</span>
+                    <div class="link-card-info">
+                        <div class="link-card-title">ธรรมจักร</div>
+                        <div class="link-card-desc">dhammajak.net</div>
+                    </div>
+                    <span class="link-card-arrow">→</span>
+                </a>
+                <a href="https://www.palungjit.org/" target="_blank" rel="noopener noreferrer"
+                    class="link-card reveal stagger-2">
+                    <span class="link-card-icon">💡</span>
+                    <div class="link-card-info">
+                        <div class="link-card-title">พลังจิต</div>
+                        <div class="link-card-desc">palungjit.org</div>
+                    </div>
+                    <span class="link-card-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-brand">
+                        <span>☸️</span>
+                        <span>วันสำคัญทางพระพุทธศาสนา</span>
+                    </div>
+                    <p class="footer-desc">
+                        โครงงานเว็บไซต์เพื่อการศึกษา รายวิชาการเตรียมความพร้อมฝึกประสบการณ์วิชาชีพและสหกิจศึกษา
+                        บูรณาการกับศิลปวัฒนธรรม
+                    </p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">วันสำคัญ</h3>
+                    <ul class="footer-links">
+                        <li><a href="makha-bucha.html">🕯️ วันมาฆบูชา</a></li>
+                        <li><a href="visakha-bucha.html">🪷 วันวิสาขบูชา</a></li>
+                        <li><a href="asalha-bucha.html">☸️ วันอาสาฬหบูชา</a></li>
+                        <li><a href="khao-phansa.html">🙏 วันเข้าพรรษา</a></li>
+                        <li><a href="ok-phansa.html">🌕 วันออกพรรษา</a></li>
+                        <li><a href="about.html">📘 ทฤษฎีออกแบบ & HCI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">ลิงก์ภายนอก</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.onab.go.th/" target="_blank" rel="noopener">สนง.พระพุทธศาสนา</a></li>
+                        <li><a href="https://www.dra.go.th/" target="_blank" rel="noopener">กรมการศาสนา</a></li>
+                        <li><a href="https://www.dhammathai.org/" target="_blank" rel="noopener">ธรรมะไทย</a></li>
+                        <li><a href="https://84000.org/" target="_blank" rel="noopener">พระไตรปิฎกออนไลน์</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">
+                    © 2024 วันสำคัญทางพระพุทธศาสนา | จัดทำเพื่อการศึกษา
+                </p>
+                <p class="footer-source">
+                    แหล่งอ้างอิง:
+                    <a href="https://www.onab.go.th/" target="_blank" rel="noopener">สนง.พระพุทธศาสนาแห่งชาติ</a>,
+                    <a href="https://www.dra.go.th/" target="_blank" rel="noopener">กรมการศาสนา</a>,
+                    <a href="https://th.wikipedia.org/" target="_blank" rel="noopener">วิกิพีเดีย</a> |
+                    ภาพ: <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a> (CC0 License)
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
